@@ -1,1 +1,1 @@
-# Office-Task1
+# JS-Challenges
