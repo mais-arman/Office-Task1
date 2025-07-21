@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 3</title>
+</head>
+<body style=" margin-top: 170px;  text-align: center;">
+
+
+    <input type="number" id="n1" placeholder="Enter Number 1">
+    <input type="number" id="n2" placeholder="Enter Number 2">
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+
+        function calculate() {
+
+            let value1 = document.getElementById("n1").value;
+            let value2 = document.getElementById("n2").value;
+            console.log(typeof value1);
+            console.log(typeof value2);
+
+            let number1 = parseInt(value1);
+            let number2 = parseInt(value2);
+            console.log(typeof number1);
+            console.log(typeof number2);
+
+            console.log((number1 + number2));
+            console.log((number1 - number2));
+            console.log((number1 * number2));
+            console.log((number1 / number2));
+            console.log((number1 % number2));
+        }
+
+    </script>
+    
+</body>
+</html>

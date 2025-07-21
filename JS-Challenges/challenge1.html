@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1</title>
+</head>
+<body style=" margin-top: 170px;  text-align: center;">
+
+
+    <div id="originalText">Hello Mais!</div>
+    <br>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("originalText").textContent = "Hello, JavaScript!";
+        }
+
+        function changeColor() {
+            document.getElementById("originalText").style.color = "red";
+        }
+
+        function reset() {
+            const original = document.getElementById('originalText');
+            original.textContent = "Hello Mais!";
+            original.style.color = "black";
+        }
+    </script>
+    
+</body>
+</html>

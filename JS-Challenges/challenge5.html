@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5</title>
+</head>
+<body style=" margin-top: 170px;  text-align: center;">
+
+    <input type="text" id="myAge" placeholder="Enter your age">
+    <button onclick="checkAge()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkAge() {
+            let age = parseInt(document.getElementById("myAge").value);
+
+            if (isNaN(age) || age < 0) {
+            document.getElementById("result").textContent = "Invalid age";
+            } else if (age >= 18) {
+            document.getElementById("result").textContent = "You are eligible to vote";
+            } else {
+            document.getElementById("result").textContent = "You are NOT eligible to vote";
+            }
+        }
+    </script>
+    
+</body>
+</html>
